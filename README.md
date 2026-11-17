@@ -26,7 +26,12 @@ Almost all of the words on the site are in `index.html`. Section headings, servi
 
 Colors, type, and spacing are in `src/styles.css`, under `:root`. The page is a warm light theme: ivory background, blush and sage section bands, deepened rose-gold as the brand accent, and sage as the second accent. Headings use Fraunces. Body text and buttons use Nunito Sans. Change those imports at the top of the stylesheet if you want a different pairing. Keep text colors dark enough to read on the cream, blush, and sage backgrounds.
 
-Do not add a phone number, email address, street address, price, review, or testimonial unless it is real. None of those are invented on the site today.
+The public inboxes are real and listed on the site:
+
+- `hello@nbarchcompany.com` is the main contact for quotes, custom orders, and general inquiries.
+- `help@nbarchcompany.com` is for support with an order that is already placed.
+
+Do not add a phone number, street address, price, review, or testimonial unless it is real. None of those are on the site today.
 
 ## Logos
 
@@ -60,35 +65,48 @@ The gallery is line drawings on purpose, so the page does not pretend they are c
 
 `scripts/generate-gallery.py` redraws the placeholder SVGs if you want to change those drawings.
 
+## Contact
+
+Two public addresses are on the quote section, the footer, and the FAQ. They are also in the page’s JSON-LD `contactPoint` entries.
+
+| Address | Use |
+| --- | --- |
+| `hello@nbarchcompany.com` | Main public contact. Quotes, custom orders, and general inquiries. The quote form sends here. |
+| `help@nbarchcompany.com` | Support for an existing order. |
+
+`hello@nbarchcompany.com` is a published destination, not a secret. The secrets policy still forbids API keys, passwords, tokens, and other credentials.
+
 ## Wire up the quote form
 
-Visitors can fill out the form today. **Nothing is sent, and nothing is stored,** until you set one value.
-
-Open `public/config.js` and set `formEndpoint`:
+`public/config.js` is set to the main inbox:
 
 ```js
 window.NBARCH_CONFIG = {
-  formEndpoint: "",
+  formEndpoint: "hello@nbarchcompany.com",
 };
 ```
 
-Leave it as `""` and the submit button stays off. The page tells visitors that online quotes are coming soon.
+Submitting opens the visitor’s email app. The message is addressed to that inbox, the subject is `Quote request — N.B. Arch Co.`, and the body lists name, email, phone, product, quantity, artwork filename, and the description. The button label is “Open email to send.” Browsers cannot attach the artwork file this way. The page says so, and the email body names the file to attach. Nothing is stored on the website. A plain “Email us at hello@nbarchcompany.com” link sits under the form if the mail app does not open.
 
-### Formspree (recommended)
+The form’s `action` in `index.html` is the same mailto address. The script reads `formEndpoint`, turns the submit button on, and builds the subject and body. If you later point `formEndpoint` at a form service, update that `action` too. The button stays off until that script runs. The “Email us at” link under the form does not need JavaScript.
+
+Leave `formEndpoint` as `""` and the submit button stays off. The page then tells visitors that online quotes are coming soon, and nothing they type is sent or stored.
+
+### Formspree
 
 Formspree accepts the form, including the optional artwork file, and emails you.
 
 1. Create a form at [formspree.io](https://formspree.io/).
 2. Copy the endpoint. It looks like `https://formspree.io/f/xxxxxxxx`.
 3. Set `formEndpoint` to that URL, in quotes.
-4. In Formspree, choose the inbox that should receive requests. Confirm the plan you are on allows file uploads if you want artwork to come through.
+4. In Formspree, choose the inbox that should receive requests. `hello@nbarchcompany.com` is the inbox for new quotes. Confirm the plan you are on allows file uploads if you want artwork to come through.
 5. Rebuild and redeploy.
 
 The form posts `multipart/form-data` with these fields: `name`, `email`, `phone`, `product`, `quantity`, `description`, `artwork`, and `_subject`. Any service that accepts that kind of POST can be used in place of Formspree. Put its URL in the same `formEndpoint` value.
 
-### An email address instead
+### An email address
 
-Set `formEndpoint` to the inbox, for example `"you@example.com"`. Submitting opens the visitor’s email app with the request filled in. Browsers cannot attach the artwork file this way. The page says so, and asks them to attach it in the email before sending. The text of the request is not stored on the website.
+Any inbox in `formEndpoint` uses the same mail-app handoff. The live value is `"hello@nbarchcompany.com"`. Keep existing-order support on `help@nbarchcompany.com` in the page copy; do not point this form at that address.
 
 If the value is not a `http`/`https` URL and not an email address, the form stays off.
 
@@ -144,10 +162,11 @@ The site does not need environment variables today. If one is required later, pu
 
 The site is deliberately missing anything that was not confirmed:
 
-- A destination for quote requests (`formEndpoint` in `public/config.js`)
 - Photographs of real work, to replace the gallery drawings
-- Any public contact details to display: phone, email, shop address, hours
+- A phone number, street address, or hours
 - Prices, if they should appear on the site
 - A specific turnaround time, if one should be promised
 - Social profile links, if they should appear
 - DNS access for `nbarchcompany.com`, pointed at the host
+
+Quotes already go to `hello@nbarchcompany.com` through `formEndpoint` in `public/config.js`. Existing orders use `help@nbarchcompany.com`, which is linked on the page and is not the form destination.

@@ -1,16 +1,20 @@
 // Quote delivery for N.B. Arch Co.
 //
-// This is the only value you need to change to start receiving requests.
-// Leave it as an empty string until you have somewhere for them to go.
-// While it is empty, the form stays on the page, the button stays off,
-// and nothing a visitor types is sent or stored.
+// formEndpoint is public. This file is copied into the published site.
+// It is a destination for quote requests, not a place for a secret.
 //
 // Set formEndpoint to either:
 //   "https://formspree.io/f/xxxxxxxx"   a form service that accepts a POST
-//   "owner@example.com"                 opens the visitor's email app
+//   "hello@nbarchcompany.com"           opens the visitor's email app
 //
+// hello@nbarchcompany.com is the main public inbox for quotes, custom
+// orders, and general inquiries. help@nbarchcompany.com is for existing
+// orders. That support address is shown on the page; this form does not
+// send there.
+//
+// An empty string turns the submit button off and stores nothing.
 // See the README for Formspree setup, file attachments, and redeploying.
 
 window.NBARCH_CONFIG = {
-  formEndpoint: "",
+  formEndpoint: "hello@nbarchcompany.com",
 };

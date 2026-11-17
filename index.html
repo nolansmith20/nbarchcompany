@@ -47,6 +47,22 @@
         "description": "Custom laser engraving for drinkware, wood, and corporate gifts.",
         "logo": "https://nbarchcompany.com/brand/logo-badge.png",
         "image": "https://nbarchcompany.com/og.png",
+        "email": "hello@nbarchcompany.com",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": "hello@nbarchcompany.com",
+            "url": "https://nbarchcompany.com/#quote",
+            "description": "General inquiries, quotes, and custom orders."
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "help@nbarchcompany.com",
+            "description": "Support for existing orders."
+          }
+        ],
         "makesOffer": [
           {
             "@type": "Offer",
@@ -348,7 +364,13 @@
             <details>
               <summary>Do you ship, or is pickup available?</summary>
               <p>
-                Finished work can be shipped, and local pickup is available. The quote says which applies. A public address and phone number aren’t listed on this site yet.
+                Finished work can be shipped, and local pickup is available. The quote says which applies. A street address and phone number aren’t listed on this site yet. Email <a href="mailto:hello@nbarchcompany.com">hello@nbarchcompany.com</a> about shipping or pickup on a new quote.
+              </p>
+            </details>
+            <details>
+              <summary>How do I ask about an order I already placed?</summary>
+              <p>
+                Email <a href="mailto:help@nbarchcompany.com">help@nbarchcompany.com</a> with your name and what you ordered. For a new quote, a custom order, or a general question, use <a href="mailto:hello@nbarchcompany.com">hello@nbarchcompany.com</a> or the form on this page.
               </p>
             </details>
           </div>
@@ -361,14 +383,17 @@
             <p class="eyebrow">05 — Quote</p>
             <h2 id="quote-title">Request a quote</h2>
             <p>
-              Tell us the piece, how many, and what should be engraved. A proof comes before any engraving.
+              Tell us the piece, how many, and what should be engraved. A proof comes before any engraving. Quotes, custom orders, and general inquiries go to <a href="mailto:hello@nbarchcompany.com">hello@nbarchcompany.com</a>.
+            </p>
+            <p>
+              For an order you already placed, email <a href="mailto:help@nbarchcompany.com">help@nbarchcompany.com</a>.
             </p>
           </div>
           <div class="form-panel">
             <p id="quote-status" class="notice" role="status" tabindex="-1">
-              Online quotes are coming soon. This form shows what we’ll ask. Until a destination is connected, the button stays off and nothing you type is sent or stored.
+              Submitting opens your email app with this request filled in, addressed to hello@nbarchcompany.com. If you chose artwork, attach that file in the email — the browser can’t add it. Nothing is stored on this website.
             </p>
-            <form id="quote-form" action="" method="post" novalidate>
+            <form id="quote-form" action="mailto:hello@nbarchcompany.com" method="post" enctype="text/plain" novalidate>
               <input type="hidden" name="_subject" value="Quote request from nbarchcompany.com" />
               <div class="hp" aria-hidden="true">
                 <label for="nb_leave_blank">Leave blank</label>
@@ -421,11 +446,11 @@
                 <div class="field span-2 file-row">
                   <label class="file-label" for="artwork">Logo or artwork <span class="optional">(optional)</span></label>
                   <input id="artwork" name="artwork" type="file" accept=".svg,.pdf,.ai,.eps,.png,.jpg,.jpeg,.webp,image/png,image/jpeg,image/webp,image/svg+xml,application/pdf" />
-                  <p id="artwork-hint" class="hint">SVG, PDF, AI, EPS, or PNG, up to 8 MB. Optional.</p>
+                  <p id="artwork-hint" class="hint">SVG, PDF, AI, EPS, or PNG. You’ll attach it yourself in the email. Optional.</p>
                   <p class="field-error" id="artwork-error" hidden></p>
                 </div>
                 <div class="field span-2 form-actions">
-                  <button class="btn btn-solid" type="submit" disabled>Submit quote request</button>
+                  <button class="btn btn-solid" type="submit" disabled>Open email to send</button>
                 </div>
               </div>
             </form>
@@ -433,6 +458,9 @@
               <p></p>
               <button class="btn btn-ghost" id="quote-another" type="button">Write another request</button>
             </div>
+            <p class="quote-fallback">
+              Email us at <a href="mailto:hello@nbarchcompany.com">hello@nbarchcompany.com</a>.
+            </p>
           </div>
         </div>
       </section>
@@ -449,7 +477,11 @@
               height="382"
               alt="N.B. Arch Co. Custom Goods"
             />
-            <p class="footer-copy">Custom laser engraving for drinkware, wood, and corporate gifts.</p>
+            <p class="footer-copy">
+              Custom laser engraving for drinkware, wood, and corporate gifts.<br />
+              <a href="mailto:hello@nbarchcompany.com">hello@nbarchcompany.com</a> for quotes, custom orders, and general inquiries.<br />
+              <a href="mailto:help@nbarchcompany.com">help@nbarchcompany.com</a> for existing orders.
+            </p>
           </div>
           <ul class="footer-links">
             <li><a href="#services">Services</a></li>

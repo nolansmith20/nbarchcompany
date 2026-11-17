@@ -70,8 +70,10 @@ function initQuoteForm(form) {
     "Online quotes aren’t open yet. The form setting isn’t a web address or an email, so submissions stay off and nothing you type is sent or stored.";
   const httpCopy =
     "Send the piece, the quantity, and the mark you want. You’ll approve a proof before anything is engraved.";
-  const mailtoCopy =
-    "Submitting opens your email app with this request filled in. If you chose artwork, attach that file in the email — the browser can’t add it. Nothing is stored on this website.";
+
+  function mailtoCopy(address) {
+    return `Submitting opens your email app with this request filled in, addressed to ${address}. If you chose artwork, attach that file in the email — the browser can’t add it. Nothing is stored on this website.`;
+  }
 
   function applyMode() {
     const mode = quoteMode();
@@ -79,7 +81,7 @@ function initQuoteForm(form) {
     submit.disabled = !live;
     submit.textContent = mode.type === "mailto" ? "Open email to send" : "Submit quote request";
     if (mode.type === "http") status.textContent = httpCopy;
-    else if (mode.type === "mailto") status.textContent = mailtoCopy;
+    else if (mode.type === "mailto") status.textContent = mailtoCopy(mode.value);
     else if (mode.type === "invalid") status.textContent = invalidCopy;
     else status.textContent = closedCopy;
     artworkHint.textContent =
@@ -182,18 +184,19 @@ function initQuoteForm(form) {
     if (!validate()) return;
 
     if (mode.type === "mailto") {
+      const file = fileInput.files?.[0];
       const body = [
         `Name: ${form.name.value.trim()}`,
         `Email: ${form.email.value.trim()}`,
         `Phone: ${form.phone.value.trim() || "(none)"}`,
         `Product: ${form.product.value}`,
         `Quantity: ${form.quantity.value.trim()}`,
+        `Artwork: ${file ? `${file.name} (attach this file in your email app)` : "(none)"}`,
         "",
         form.description.value.trim(),
       ].join("\n");
       const href = `mailto:${mode.value}?subject=${encodeURIComponent("Quote request — N.B. Arch Co.")}&body=${encodeURIComponent(body)}`;
       window.location.href = href;
-      const file = fileInput.files?.[0];
       status.hidden = false;
       status.textContent = file
         ? `Your email app should open with this request. Attach “${file.name}” before you send. Nothing was stored on this website.`

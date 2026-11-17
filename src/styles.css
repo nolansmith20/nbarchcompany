@@ -164,6 +164,7 @@ a {
 .occasions,
 .faq details p,
 .footer-copy,
+.quote-fallback,
 .legal {
   color: var(--muted);
 }
@@ -710,6 +711,10 @@ a {
 
 .form-actions .btn {
   width: 100%;
+}
+
+.quote-fallback {
+  margin: 1.15rem 0 0;
 }
 
 .hp {
