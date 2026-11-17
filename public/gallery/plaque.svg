@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img">
+  <title>Engraved plaque — placeholder drawing</title>
+  <rect width="800" height="1000" fill="#fffaf4"/>
+  <g fill="none" stroke="#8f4e3c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M230 430 L230 760 Q400 820 570 760 L570 430 Q400 300 230 430 Z"/>
+    <path d="M262 450 L262 742 Q400 790 538 742 L538 450 Q400 348 262 450 Z"/>
+    <path d="M 350.0 580.0 C 350.0 544.0, 392.5 544.0, 400.0 544.0 C 407.5 544.0, 450.0 544.0, 450.0 580.0"/>
+    <path d="M 322.0 580.0 H 342.0"/>
+    <path d="M 458.0 580.0 H 478.0"/>
+    <path d="M330 820 H470"/>
+    <path d="M360 838 H440"/>
+    
+  </g>
+</svg>

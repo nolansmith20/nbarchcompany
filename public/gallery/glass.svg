@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img">
+  <title>Engraved rocks glass — placeholder drawing</title>
+  <rect width="800" height="1000" fill="#fffaf4"/>
+  <g fill="none" stroke="#8f4e3c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M250 390 L278 700 Q400 748 522 700 L550 390"/>
+    <ellipse cx="400" cy="390" rx="150" ry="22"/>
+    <ellipse cx="400" cy="390" rx="128" ry="14"/>
+    <path d="M292 690 Q400 724 508 690"/>
+    <path d="M300 718 Q400 754 500 718"/>
+    <path d="M 354.0 560.0 C 354.0 526.0, 393.1 526.0, 400.0 526.0 C 406.9 526.0, 446.0 526.0, 446.0 560.0"/>
+    <path d="M 328.2 560.0 H 346.0"/>
+    <path d="M 454.0 560.0 H 471.8"/>
+    
+  </g>
+</svg>

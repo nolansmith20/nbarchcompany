@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img">
+  <title>Engraved keepsake box — placeholder drawing</title>
+  <rect width="800" height="1000" fill="#fffaf4"/>
+  <g fill="none" stroke="#8f4e3c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M400 250 L590 345 L400 440 L210 345 Z"/>
+    <path d="M210 345 L210 590 L400 685 L400 440"/>
+    <path d="M590 345 L590 590 L400 685 L400 440"/>
+    <path d="M400 250 L400 300"/>
+    <path d="M 365.0 360.0 C 365.0 334.0, 394.8 334.0, 400.0 334.0 C 405.2 334.0, 435.0 334.0, 435.0 360.0"/>
+    <path d="M 345.4 360.0 H 357.0"/>
+    <path d="M 443.0 360.0 H 454.6"/>
+    
+  </g>
+</svg>

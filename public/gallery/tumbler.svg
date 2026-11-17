@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img">
+  <title>Engraved tumbler — placeholder drawing</title>
+  <rect width="800" height="1000" fill="#fffaf4"/>
+  <g fill="none" stroke="#8f4e3c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M318 248 L338 760 Q400 802 462 760 L482 248"/>
+    <ellipse cx="400" cy="248" rx="82" ry="16"/>
+    <ellipse cx="400" cy="248" rx="68" ry="10"/>
+    <path d="M326 248 L332 210 Q400 196 468 210 L474 248"/>
+    <path d="M348 360 H452"/>
+    <path d="M352 378 H448"/>
+    <path d="M 357.0 560.0 C 357.0 524.0, 393.6 524.0, 400.0 524.0 C 406.4 524.0, 443.0 524.0, 443.0 560.0"/>
+    <path d="M 332.9 560.0 H 349.0"/>
+    <path d="M 451.0 560.0 H 467.1"/>
+    
+  </g>
+</svg>
