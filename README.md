@@ -132,6 +132,14 @@ No environment variables are required. `public/config.js` is copied into the bui
 
 After the domain is connected, the canonical URL and Open Graph tags already point at `https://nbarchcompany.com/`.
 
+## Secrets policy
+
+This repository is public. Never commit a secret. That includes API keys, passwords, tokens, private codes, and any other credential.
+
+The site does not need environment variables today. If one is required later, put it in the hosting provider’s environment variables (Vercel, Netlify, or Cloudflare Pages). Do not put it in git. Do not put it in `public/config.js` either: that file is copied into the published site, so anything in it is public. A form endpoint there is a destination for quote requests, not a password.
+
+`.env` and `.env.*` are ignored. `.env.example` is the only env file that may be committed, and only with names or empty placeholders. Pushes and pull requests run a gitleaks scan (`.github/workflows/gitleaks.yml`).
+
 ## What the owner still needs to provide
 
 The site is deliberately missing anything that was not confirmed:
