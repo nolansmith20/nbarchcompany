@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">N.B. Arch Co. arch</title>
+  <rect width="64" height="64" rx="14" fill="#f7f1e8"/>
+  <linearGradient id="arch" gradientUnits="userSpaceOnUse" x1="0" y1="24.00" x2="0" y2="48.00"><stop offset="0%" stop-color="#a15c45"/><stop offset="46%" stop-color="#8f4e3c"/><stop offset="100%" stop-color="#6e3428"/></linearGradient>
+  <path d="M 10.00 46.00 L 10.69 44.56 L 11.38 43.19 L 12.06 41.90 L 12.75 40.67 L 13.44 39.50 L 14.12 38.40 L 14.81 37.36 L 15.50 36.38 L 16.19 35.45 L 16.88 34.58 L 17.56 33.75 L 18.25 32.98 L 18.94 32.25 L 19.62 31.58 L 20.31 30.94 L 21.00 30.35 L 21.69 29.80 L 22.38 29.29 L 23.06 28.83 L 23.75 28.40 L 24.44 28.01 L 25.12 27.65 L 25.81 27.33 L 26.50 27.05 L 27.19 26.80 L 27.88 26.59 L 28.56 26.41 L 29.25 26.26 L 29.94 26.15 L 30.62 26.06 L 31.31 26.02 L 32.00 26.00 L 32.69 26.02 L 33.38 26.06 L 34.06 26.15 L 34.75 26.26 L 35.44 26.41 L 36.12 26.59 L 36.81 26.80 L 37.50 27.05 L 38.19 27.33 L 38.88 27.65 L 39.56 28.01 L 40.25 28.40 L 40.94 28.83 L 41.62 29.29 L 42.31 29.80 L 43.00 30.35 L 43.69 30.94 L 44.38 31.58 L 45.06 32.25 L 45.75 32.98 L 46.44 33.75 L 47.12 34.58 L 47.81 35.45 L 48.50 36.38 L 49.19 37.36 L 49.88 38.40 L 50.56 39.50 L 51.25 40.67 L 51.94 41.90 L 52.62 43.19 L 53.31 44.56 L 54.00 46.00" fill="none" stroke="url(#arch)" stroke-width="5.4" stroke-linecap="butt" stroke-linejoin="round"/>
+</svg>

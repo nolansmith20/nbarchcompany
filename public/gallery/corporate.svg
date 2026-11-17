@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img">
+  <title>Matched engraved tumblers — placeholder drawing</title>
+  <rect width="800" height="1000" fill="#fffaf4"/>
+  <g fill="none" stroke="#8f4e3c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M178 340 L196 690 Q250 724 304 690 L322 340"/>
+    <ellipse cx="250" cy="340" rx="72" ry="14"/>
+    <path d="M338 300 L360 700 Q430 742 500 700 L522 300"/>
+    <ellipse cx="430" cy="300" rx="92" ry="16"/>
+    <path d="M538 340 L556 690 Q610 724 664 690 L682 340"/>
+    <ellipse cx="610" cy="340" rx="72" ry="14"/>
+    <path d="M150 760 H690"/>
+    <path d="M 224.0 530.0 C 224.0 508.0, 246.1 508.0, 250.0 508.0 C 253.9 508.0, 276.0 508.0, 276.0 530.0"/>
+    <path d="M 209.4 530.0 H 216.0"/>
+    <path d="M 284.0 530.0 H 290.6"/>
+    <path d="M 398.0 510.0 C 398.0 484.0, 425.2 484.0, 430.0 484.0 C 434.8 484.0, 462.0 484.0, 462.0 510.0"/>
+    <path d="M 380.1 510.0 H 390.0"/>
+    <path d="M 470.0 510.0 H 479.9"/>
+    <path d="M 584.0 530.0 C 584.0 508.0, 606.1 508.0, 610.0 508.0 C 613.9 508.0, 636.0 508.0, 636.0 530.0"/>
+    <path d="M 569.4 530.0 H 576.0"/>
+    <path d="M 644.0 530.0 H 650.6"/>
+    
+  </g>
+</svg>

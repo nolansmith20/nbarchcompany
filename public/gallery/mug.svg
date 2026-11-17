@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img">
+  <title>Engraved mug — placeholder drawing</title>
+  <rect width="800" height="1000" fill="#fffaf4"/>
+  <g fill="none" stroke="#8f4e3c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M250 300 L272 690 Q360 742 448 690 L470 300"/>
+    <ellipse cx="360" cy="300" rx="110" ry="20"/>
+    <ellipse cx="360" cy="300" rx="92" ry="12"/>
+    <path d="M470 390 C560 390, 572 560, 470 575"/>
+    <path d="M470 424 C528 430, 534 530, 470 542"/>
+    <path d="M 321.0 520.0 C 321.0 488.0, 354.1 488.0, 360.0 488.0 C 365.9 488.0, 399.0 488.0, 399.0 520.0"/>
+    <path d="M 299.2 520.0 H 313.0"/>
+    <path d="M 407.0 520.0 H 420.8"/>
+    
+  </g>
+</svg>
